@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Itaú / Gama Academy - Transformando Talentos para o Futuro</title>
+</head>
+
+<body>
+    <div class="quadrado">
+        <div class="titulo">
+            <h3>Itaú / Gama Academy - Transformando Talentos para o Futuro</h3>
+        </div>
+        <div class="imagem centro">
+            <img src="foto/foto.png"
+                alt="Fundo roxo, Desenhos pixelados de lampada, calendário, monitor, teclado e notebook">
+        </div>
+        <div class="cadastro centro">
+            <form>
+                <div>
+                    <label for="nome" class="required">Nome:</label>
+                    <input type="text" id="nome" required size="50">
+                    <label for="nome">Sexo:</label>
+                    <select name="sexo" id="sexo">
+                        <option value="" selected></option>
+                        <option value="feminino">F</option>
+                        <option value="masculino">M</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="CPF" class="required">CPF:</label>
+                    <input type="text" id="cpf" required onblur="validarCPF(this)">
+                    <label for="RG">RG:</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="Endereço" class="required">Endereço:</label>
+                    <input type="text" required size="30">
+                    <label for="Número" class="required">Número:</label>
+                    <input type="text" required size="6">
+                    <label for="Bairro">Bairro:</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="Cidade">Cidade:</label>
+                    <input type="text">
+                    <label for="Estado">Estado:</label>
+                    <input type="text">
+                    <label for="CEP">CEP:</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="Telefone Fixo">Telefone Fixo:</label>
+                    <input type="text">
+                    <label for="Telefone Celular" class="required">Telefone Celular:</label>
+                    <input type="text" required>
+                </div>
+
+                <input class="botao" type="reset" value="Cancelar">
+                <input class="botao" type="submit" value="Cadastrar">
+            </form>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
